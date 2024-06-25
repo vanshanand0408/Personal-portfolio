@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio </title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9bf9fc2371.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--Header -->
@@ -30,7 +31,7 @@
 
 <!-- about -->
     <div class="about">
-        <div class="box">
+        <div class="container">
             <div class="row">
                 <div class ="about-1">
                     <img src="">
@@ -40,9 +41,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi, dolore ullam odio, error exercitationem sequi, voluptatibus maiores quaerat voluptate fugit maxime doloribus. Delectus accusamus enim aliquam nostrum sequi dolor recusandae, eum ipsum cum, ullam tenetur quisquam, magnam ut laudantium explicabo quae! Sapiente, quae maxime.</p>
 
                     <div class="tab-title">
-                        <p class="tab-info active-link" onclick="onetab(Skills)">Skills</p>
-                        <p class="tab-info" onclick="onetab(experince)">Experience</p>
-                        <p class="tab-info" onclick="onetab(education)">Eduction</p>
+                        <p class="tab-info active-link" onclick="opentab('Skills' , event)">Skills</p>
+                        <p class="tab-info" onclick="opentab('Experince' , event)">Experience</p>
+                        <p class="tab-info" onclick="opentab('Education' , event)">Eduction</p>
                     </div>
                     <div class="tab-content active" id="Skills">
                         <ul>
@@ -50,15 +51,17 @@
                             <li><span>xyz</span><br>hghsfg</li>
                             <li><span>xyz</span><br>hghsfg</li>
                         </ul>
-                    <div class="tab-content"id="experince">
+                    </div>
+                    <div class="tab-content" id="Experince">
                         <ul>
-                            <li><span>xyz</span><br>hghsfg</li>
+                            <li><span>x=yz</span><br>hghsfg</li>
                             <li><span>xyz</span><br>hghsfg</li>
                             <li><span>xyz</span><br>hghsfg</li>
                         </ul>
-                    <div class="tab-content"id="education">
+                    </div>
+                    <div class="tab-content" id="Education">
                         <ul>
-                            <li><span>xyz</span><br>hghsfg</li>
+                            <li><span>xy=z</span><br>hghsfg</li>
                             <li><span>xyz</span><br>hghsfg</li>
                             <li><span>xyz</span><br>hghsfg</li>
                         </ul>
@@ -67,5 +70,36 @@
             </div>
         </div>
     </div>
+
+    <!-- services  -->
+     <div class="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>xyz</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptates eligendi ratione minima maiores dolor accusamus excepturi consectetur tenetur illum. Totam, voluptatum voluptates eius optio exercitationem ratione impedit odio quaerat consequatur assumenda, eum maxime quam delectus a autem. Eum corrupti, iusto sint ipsam impedit hic.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>xyz</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptates eligendi ratione minima maiores dolor accusamus excepturi consectetur tenetur illum. Totam, voluptatum voluptates eius optio exercitationem ratione impedit odio quaerat consequatur assumenda, eum maxime quam delectus a autem. Eum corrupti, iusto sint ipsam impedit hic.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <p class="fab fa-app-store"></p>
+                    <h2>xyz</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptates eligendi ratione minima maiores dolor accusamus excepturi consectetur tenetur illum. Totam, voluptatum voluptates eius optio exercitationem ratione impedit odio quaerat consequatur assumenda, eum maxime quam delectus a autem. Eum corrupti, iusto sint ipsam impedit hic.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
